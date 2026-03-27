@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulář by H. Křiváková</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background:blue;
+    }
+    form {
+        background-color: darkseagreen;
+        padding: 12px;
+        font-family: "Fontdiner Swanky";
+        font-size: 32px;
+        border-radius: 24px;
+        text-align: left;
+    }
+    form p {
+        background: lightblue;
+        padding: 12px;
+        margin: 24px 12px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px lightseagreen;
+    }
+    input{
+        font-size: 24px;
+    }
+    label{
+        width: 320px;
+        display: block;
+    }
+    .tlacitko{
+        background: black;
+        color: white;
+        padding: 16px 32px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .tlacitko:hover {
+        scale: 1.2;
+    }
+ 
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="odkaz odkaz-zpět" href="index.html">Zpět na hl. stránku</a>
+
+  <form>
+    <p>
+     <label for="jmeno">Jméno</label>
+     <input type="text" name="jmeno" id="jmeno" required>
+    </p>
+    <p>
+      <label for="sun">Dneska svítí sluníčko</label>
+      <input type="checkbox" name="jmeno" id="jmeno" >
+     </p>
+     <p>
+      <label for="mood">Moje dnešní nálada:</label>
+      mizerná
+      <input type="radio" name="mood" value="5">
+      <input type="radio" name="mood" value="4">
+      <input type="radio" name="mood" value="3">
+      <input type="radio" name="mood" value="2">
+      <input type="radio" name="mood" value="1">
+      úžasná
+     </p>
+     <p>
+      <label for="file">Foto</label>
+      <input type="file" name="file" id="file" >
+     </p>
+     <p>
+      <label for="barva">Oblíbená barva</label>
+      <input type="color" name="barva" id="barva" >
+     </p>
+     <p>
+      <label for="datum">Datum narození</label>
+      <input type="date" name="datum" id="datum" >
+     </p>
+     <p>
+      <label for="no">Oblíbené číslo</label>
+      <input type="number" name="no" id="no" >
+     </p>
+     <p>
+      <label for="pwd">Heslo</label>
+      <input type="password" name="pwd" id="pwd" >
+     </p>
+    <input type="hidden" name="secret" value="123456xxx">
+    <input class="tlacitko" type="reset" value="Smazat vše">
+    <input class="tlacitko" type="submit" value="Poptat">
+  </form>
+
+</body>
+</html>
